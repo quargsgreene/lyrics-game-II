@@ -24,6 +24,7 @@ function setup() {
   guessButton.mousePressed(checkMessage);
 
   const checkMessageContainer = createP('');
+  checkMessageContainer.id('feedback');
   checkMessageContainer.position(guess.x, guess.y + height / 10);
   checkMessageContainer.class('input');
 
